@@ -50,6 +50,29 @@
 	scroll-snap-align: start;
 }
 
+/* Custom Scrollbars */
+
+.media-scroller::-webkit-scrollbar {
+	height: 0.4em;
+}
+
+.media-scroller::-webkit-scrollbar-track {
+	margin: 0.5rem;
+}
+
+.media-scroller::-webkit-scrollbar-thumb {
+	background: #e8fff5;
+	border-radius: 100vw;
+}
+
+/* For Firefox */
+
+@supports (scrollbar-color: red blue) {
+	.media-scroller {
+		scrollbar-color: #e8fff5 rgba(0, 0, 0, 0);
+	}
+}
+
 /* general styling */
 
 * {
